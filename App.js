@@ -7,7 +7,14 @@ export default function App() {
 	return (
 		<View style={styles.container}>
 			<Text>Open up App.js to start working on your app!</Text>
-			<Image source={SearchIcon} width={20} height={20} fill={"red"} style={styles.icon} />
+			<Image
+				source={SearchIcon}
+				style={{
+					width: 60,
+					height: 60,
+					backgroundColor: "gray",
+				}}
+			/>
 			<StatusBar style="auto" />
 		</View>
 	);
@@ -23,6 +30,6 @@ const styles = StyleSheet.create({
 	icon: {
 		width: 40,
 		height: 40,
-		fill: "black",
+		backgroundColor: "red",
 	},
 });
